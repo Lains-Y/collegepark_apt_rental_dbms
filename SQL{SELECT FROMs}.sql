@@ -73,19 +73,19 @@ ORDER BY a.aptName ASC;
 
 --About Social Media & AgentPhoneNum & Office Hour
 
---(1)Show all the agents’ social media
+--(1)Show all the agentsâ€™ social media
 SELECT a.aptName, so.agtSocialMedia
 FROM [TerpHoogle.contact] ca, [TerpHoogle.Apartment] a,[TerpHoogle.AgtSocialMedia] so
 WHERE ca.aptId=a.aptId 
 and ca.agentId = so.agentId;
 
---(2)Show all the agents’ phone number
+--(2)Show all the agentsâ€™ phone number
 SELECT a.aptName, ph.agtPhoneNum
 FROM [TerpHoogle.contact] ca, [TerpHoogle.Apartment] a,[TerpHoogle.AgtPhoneNum] ph
 WHERE ca.aptId=a.aptId 
 and ca.agentId = ph.agentId;
 
---(3)Show all the agents’ office hour
+--(3)Show all the agentsâ€™ office hour
 SELECT a.aptName, ca.agtOfficeHour
 FROM [TerpHoogle.contact] ca, [TerpHoogle.Apartment] a
 WHERE ca.aptId=a.aptId;
