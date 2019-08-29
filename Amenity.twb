@@ -1,0 +1,2042 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20182.18.0627.2230                               -->
+<workbook original-version='18.1' source-build='2018.2.0 (20182.18.0627.2230)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='TerpHoogle.Apartment+ (BUDT758_DB_0502_09)' inline='true' name='federated.0qmk8jj0v58ry719y2fd60zsk1h0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='mssqllab.rhsmith.umd.edu,9758' name='sqlserver.0ea23ll1jwp6ey19f8tt90tjqnyg'>
+            <connection authentication='sqlserver' class='sqlserver' dbname='BUDT758_DB_0502_09' odbc-native-protocol='yes' one-time-sql='' port='0' server='mssqllab.rhsmith.umd.edu,9758' username='BUDT758_Student_089' />
+          </named-connection>
+        </named-connections>
+        <relation join='full' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[TerpHoogle.Apartment].[aptId]' />
+              <expression op='[TerpHoogle.CommunityAmenity].[aptId]' />
+            </expression>
+          </clause>
+          <relation join='full' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[TerpHoogle.Apartment].[aptId]' />
+                <expression op='[TerpHoogle.ApartmentAmenity].[aptId]' />
+              </expression>
+            </clause>
+            <relation connection='sqlserver.0ea23ll1jwp6ey19f8tt90tjqnyg' name='TerpHoogle.Apartment' table='[dbo].[TerpHoogle.Apartment]' type='table' />
+            <relation connection='sqlserver.0ea23ll1jwp6ey19f8tt90tjqnyg' name='TerpHoogle.ApartmentAmenity' table='[dbo].[TerpHoogle.ApartmentAmenity]' type='table' />
+          </relation>
+          <relation connection='sqlserver.0ea23ll1jwp6ey19f8tt90tjqnyg' name='TerpHoogle.CommunityAmenity' table='[dbo].[TerpHoogle.CommunityAmenity]' type='table' />
+        </relation>
+        <cols>
+          <map key='[airConditioning]' value='[TerpHoogle.ApartmentAmenity].[airConditioning]' />
+          <map key='[applicationFee]' value='[TerpHoogle.Apartment].[applicationFee]' />
+          <map key='[aptAmenId]' value='[TerpHoogle.ApartmentAmenity].[aptAmenId]' />
+          <map key='[aptId (TerpHoogle.ApartmentAmenity)]' value='[TerpHoogle.ApartmentAmenity].[aptId]' />
+          <map key='[aptId (TerpHoogle.CommunityAmenity)]' value='[TerpHoogle.CommunityAmenity].[aptId]' />
+          <map key='[aptId]' value='[TerpHoogle.Apartment].[aptId]' />
+          <map key='[aptName]' value='[TerpHoogle.Apartment].[aptName]' />
+          <map key='[aptPic]' value='[TerpHoogle.Apartment].[aptPic]' />
+          <map key='[bbqArea]' value='[TerpHoogle.CommunityAmenity].[bbqArea]' />
+          <map key='[breakfastBar]' value='[TerpHoogle.CommunityAmenity].[breakfastBar]' />
+          <map key='[businessCenter]' value='[TerpHoogle.CommunityAmenity].[businessCenter]' />
+          <map key='[cableTV]' value='[TerpHoogle.ApartmentAmenity].[cableTV]' />
+          <map key='[carWashArea]' value='[TerpHoogle.CommunityAmenity].[carWashArea]' />
+          <map key='[ceilingFan]' value='[TerpHoogle.ApartmentAmenity].[ceilingFan]' />
+          <map key='[city]' value='[TerpHoogle.Apartment].[city]' />
+          <map key='[clubHouse]' value='[TerpHoogle.CommunityAmenity].[clubHouse]' />
+          <map key='[coffeeBar]' value='[TerpHoogle.CommunityAmenity].[coffeeBar]' />
+          <map key='[comAmenId]' value='[TerpHoogle.CommunityAmenity].[comAmenId]' />
+          <map key='[computerLab]' value='[TerpHoogle.CommunityAmenity].[computerLab]' />
+          <map key='[constructionTime]' value='[TerpHoogle.Apartment].[constructionTime]' />
+          <map key='[controlledAccess]' value='[TerpHoogle.CommunityAmenity].[controlledAccess]' />
+          <map key='[deposit]' value='[TerpHoogle.Apartment].[deposit]' />
+          <map key='[dishwasher]' value='[TerpHoogle.ApartmentAmenity].[dishwasher]' />
+          <map key='[distanceToUniversity]' value='[TerpHoogle.Apartment].[distanceToUniversity]' />
+          <map key='[fitnessCenter]' value='[TerpHoogle.CommunityAmenity].[fitnessCenter]' />
+          <map key='[flooring]' value='[TerpHoogle.ApartmentAmenity].[flooring]' />
+          <map key='[furnished]' value='[TerpHoogle.ApartmentAmenity].[furnished]' />
+          <map key='[internetReady]' value='[TerpHoogle.ApartmentAmenity].[internetReady]' />
+          <map key='[landlordId]' value='[TerpHoogle.Apartment].[landlordId]' />
+          <map key='[laundryInUnit]' value='[TerpHoogle.ApartmentAmenity].[laundryInUnit]' />
+          <map key='[lounge]' value='[TerpHoogle.CommunityAmenity].[lounge]' />
+          <map key='[microwaveOven]' value='[TerpHoogle.ApartmentAmenity].[microwaveOven]' />
+          <map key='[packageService]' value='[TerpHoogle.CommunityAmenity].[packageService]' />
+          <map key='[patio]' value='[TerpHoogle.ApartmentAmenity].[patio]' />
+          <map key='[petCare]' value='[TerpHoogle.CommunityAmenity].[petCare]' />
+          <map key='[petFriendly]' value='[TerpHoogle.CommunityAmenity].[petFriendly]' />
+          <map key='[postalCode]' value='[TerpHoogle.Apartment].[postalCode]' />
+          <map key='[propertyMgrOnSite]' value='[TerpHoogle.CommunityAmenity].[propertyMgrOnSite]' />
+          <map key='[sAddress]' value='[TerpHoogle.Apartment].[sAddress]' />
+          <map key='[shuttle]' value='[TerpHoogle.Apartment].[shuttle]' />
+          <map key='[smokeFree]' value='[TerpHoogle.CommunityAmenity].[smokeFree]' />
+          <map key='[state]' value='[TerpHoogle.Apartment].[state]' />
+          <map key='[storageSpace]' value='[TerpHoogle.ApartmentAmenity].[storageSpace]' />
+          <map key='[swimmingPool]' value='[TerpHoogle.CommunityAmenity].[swimmingPool]' />
+          <map key='[trashService]' value='[TerpHoogle.CommunityAmenity].[trashService]' />
+          <map key='[utilityIncluded]' value='[TerpHoogle.ApartmentAmenity].[utilityIncluded]' />
+          <map key='[walkInCloset]' value='[TerpHoogle.ApartmentAmenity].[walkInCloset]' />
+          <map key='[wifiAtCommunity]' value='[TerpHoogle.CommunityAmenity].[wifiAtCommunity]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>aptId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[aptId]</local-name>
+            <parent-name>[TerpHoogle.Apartment]</parent-name>
+            <remote-alias>aptId</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>4</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aptName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[aptName]</local-name>
+            <parent-name>[TerpHoogle.Apartment]</parent-name>
+            <remote-alias>aptName</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>30</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sAddress</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sAddress]</local-name>
+            <parent-name>[TerpHoogle.Apartment]</parent-name>
+            <remote-alias>sAddress</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>30</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[TerpHoogle.Apartment]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[TerpHoogle.Apartment]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>postalCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[postalCode]</local-name>
+            <parent-name>[TerpHoogle.Apartment]</parent-name>
+            <remote-alias>postalCode</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>5</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deposit</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[deposit]</local-name>
+            <parent-name>[TerpHoogle.Apartment]</parent-name>
+            <remote-alias>deposit</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>4</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distanceToUniversity</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[distanceToUniversity]</local-name>
+            <parent-name>[TerpHoogle.Apartment]</parent-name>
+            <remote-alias>distanceToUniversity</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>2</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shuttle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[shuttle]</local-name>
+            <parent-name>[TerpHoogle.Apartment]</parent-name>
+            <remote-alias>shuttle</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>constructionTime</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[constructionTime]</local-name>
+            <parent-name>[TerpHoogle.Apartment]</parent-name>
+            <remote-alias>constructionTime</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>applicationFee</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[applicationFee]</local-name>
+            <parent-name>[TerpHoogle.Apartment]</parent-name>
+            <remote-alias>applicationFee</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aptPic</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[aptPic]</local-name>
+            <parent-name>[TerpHoogle.Apartment]</parent-name>
+            <remote-alias>aptPic</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>900</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>landlordId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[landlordId]</local-name>
+            <parent-name>[TerpHoogle.Apartment]</parent-name>
+            <remote-alias>landlordId</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aptAmenId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[aptAmenId]</local-name>
+            <parent-name>[TerpHoogle.ApartmentAmenity]</parent-name>
+            <remote-alias>aptAmenId</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aptId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[aptId (TerpHoogle.ApartmentAmenity)]</local-name>
+            <parent-name>[TerpHoogle.ApartmentAmenity]</parent-name>
+            <remote-alias>aptId</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>4</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>furnished</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[furnished]</local-name>
+            <parent-name>[TerpHoogle.ApartmentAmenity]</parent-name>
+            <remote-alias>furnished</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>laundryInUnit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[laundryInUnit]</local-name>
+            <parent-name>[TerpHoogle.ApartmentAmenity]</parent-name>
+            <remote-alias>laundryInUnit</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>airConditioning</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[airConditioning]</local-name>
+            <parent-name>[TerpHoogle.ApartmentAmenity]</parent-name>
+            <remote-alias>airConditioning</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>walkInCloset</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[walkInCloset]</local-name>
+            <parent-name>[TerpHoogle.ApartmentAmenity]</parent-name>
+            <remote-alias>walkInCloset</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dishwasher</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dishwasher]</local-name>
+            <parent-name>[TerpHoogle.ApartmentAmenity]</parent-name>
+            <remote-alias>dishwasher</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>microwaveOven</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[microwaveOven]</local-name>
+            <parent-name>[TerpHoogle.ApartmentAmenity]</parent-name>
+            <remote-alias>microwaveOven</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ceilingFan</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ceilingFan]</local-name>
+            <parent-name>[TerpHoogle.ApartmentAmenity]</parent-name>
+            <remote-alias>ceilingFan</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flooring</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[flooring]</local-name>
+            <parent-name>[TerpHoogle.ApartmentAmenity]</parent-name>
+            <remote-alias>flooring</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cableTV</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cableTV]</local-name>
+            <parent-name>[TerpHoogle.ApartmentAmenity]</parent-name>
+            <remote-alias>cableTV</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patio</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[patio]</local-name>
+            <parent-name>[TerpHoogle.ApartmentAmenity]</parent-name>
+            <remote-alias>patio</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>utilityIncluded</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[utilityIncluded]</local-name>
+            <parent-name>[TerpHoogle.ApartmentAmenity]</parent-name>
+            <remote-alias>utilityIncluded</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>internetReady</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[internetReady]</local-name>
+            <parent-name>[TerpHoogle.ApartmentAmenity]</parent-name>
+            <remote-alias>internetReady</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>storageSpace</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[storageSpace]</local-name>
+            <parent-name>[TerpHoogle.ApartmentAmenity]</parent-name>
+            <remote-alias>storageSpace</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comAmenId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[comAmenId]</local-name>
+            <parent-name>[TerpHoogle.CommunityAmenity]</parent-name>
+            <remote-alias>comAmenId</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aptId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[aptId (TerpHoogle.CommunityAmenity)]</local-name>
+            <parent-name>[TerpHoogle.CommunityAmenity]</parent-name>
+            <remote-alias>aptId</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>4</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>swimmingPool</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[swimmingPool]</local-name>
+            <parent-name>[TerpHoogle.CommunityAmenity]</parent-name>
+            <remote-alias>swimmingPool</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fitnessCenter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fitnessCenter]</local-name>
+            <parent-name>[TerpHoogle.CommunityAmenity]</parent-name>
+            <remote-alias>fitnessCenter</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>petFriendly</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[petFriendly]</local-name>
+            <parent-name>[TerpHoogle.CommunityAmenity]</parent-name>
+            <remote-alias>petFriendly</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>breakfastBar</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[breakfastBar]</local-name>
+            <parent-name>[TerpHoogle.CommunityAmenity]</parent-name>
+            <remote-alias>breakfastBar</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>businessCenter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[businessCenter]</local-name>
+            <parent-name>[TerpHoogle.CommunityAmenity]</parent-name>
+            <remote-alias>businessCenter</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>packageService</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[packageService]</local-name>
+            <parent-name>[TerpHoogle.CommunityAmenity]</parent-name>
+            <remote-alias>packageService</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>computerLab</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[computerLab]</local-name>
+            <parent-name>[TerpHoogle.CommunityAmenity]</parent-name>
+            <remote-alias>computerLab</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clubHouse</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[clubHouse]</local-name>
+            <parent-name>[TerpHoogle.CommunityAmenity]</parent-name>
+            <remote-alias>clubHouse</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lounge</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lounge]</local-name>
+            <parent-name>[TerpHoogle.CommunityAmenity]</parent-name>
+            <remote-alias>lounge</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coffeeBar</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[coffeeBar]</local-name>
+            <parent-name>[TerpHoogle.CommunityAmenity]</parent-name>
+            <remote-alias>coffeeBar</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wifiAtCommunity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[wifiAtCommunity]</local-name>
+            <parent-name>[TerpHoogle.CommunityAmenity]</parent-name>
+            <remote-alias>wifiAtCommunity</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>controlledAccess</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[controlledAccess]</local-name>
+            <parent-name>[TerpHoogle.CommunityAmenity]</parent-name>
+            <remote-alias>controlledAccess</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>propertyMgrOnSite</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[propertyMgrOnSite]</local-name>
+            <parent-name>[TerpHoogle.CommunityAmenity]</parent-name>
+            <remote-alias>propertyMgrOnSite</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>petCare</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[petCare]</local-name>
+            <parent-name>[TerpHoogle.CommunityAmenity]</parent-name>
+            <remote-alias>petCare</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>carWashArea</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[carWashArea]</local-name>
+            <parent-name>[TerpHoogle.CommunityAmenity]</parent-name>
+            <remote-alias>carWashArea</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>smokeFree</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[smokeFree]</local-name>
+            <parent-name>[TerpHoogle.CommunityAmenity]</parent-name>
+            <remote-alias>smokeFree</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bbqArea</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bbqArea]</local-name>
+            <parent-name>[TerpHoogle.CommunityAmenity]</parent-name>
+            <remote-alias>bbqArea</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trashService</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trashService]</local-name>
+            <parent-name>[TerpHoogle.CommunityAmenity]</parent-name>
+            <remote-alias>trashService</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Air Conditioning' datatype='string' name='[airConditioning]' role='dimension' type='nominal' />
+      <column caption='Application Fee' datatype='integer' name='[applicationFee]' role='measure' type='quantitative' />
+      <column caption='Apt Amen Id' datatype='string' name='[aptAmenId]' role='dimension' type='nominal' />
+      <column caption='Apt Id' datatype='string' name='[aptId]' role='dimension' type='nominal' />
+      <column caption='Apartment Name' datatype='string' name='[aptName]' role='dimension' type='nominal' />
+      <column caption='Apt Pic' datatype='string' name='[aptPic]' role='dimension' type='nominal' />
+      <column caption='Bbq Area' datatype='string' name='[bbqArea]' role='dimension' type='nominal' />
+      <column caption='Breakfast Bar' datatype='string' name='[breakfastBar]' role='dimension' type='nominal' />
+      <column caption='Business Center' datatype='string' name='[businessCenter]' role='dimension' type='nominal' />
+      <column caption='Cable TV' datatype='string' name='[cableTV]' role='dimension' type='nominal' />
+      <column caption='Car Wash Area' datatype='string' name='[carWashArea]' role='dimension' type='nominal' />
+      <column caption='Ceiling Fan' datatype='string' name='[ceilingFan]' role='dimension' type='nominal' />
+      <column datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Club House' datatype='string' name='[clubHouse]' role='dimension' type='nominal' />
+      <column caption='Coffee Bar' datatype='string' name='[coffeeBar]' role='dimension' type='nominal' />
+      <column caption='Com Amen Id' datatype='string' name='[comAmenId]' role='dimension' type='nominal' />
+      <column caption='Computer Lab' datatype='string' name='[computerLab]' role='dimension' type='nominal' />
+      <column caption='Construction Time' datatype='integer' name='[constructionTime]' role='measure' type='quantitative' />
+      <column caption='Controlled Access' datatype='string' name='[controlledAccess]' role='dimension' type='nominal' />
+      <column caption='Deposit' datatype='integer' name='[deposit]' role='measure' type='quantitative' />
+      <column caption='Dishwasher' datatype='string' name='[dishwasher]' role='dimension' type='nominal' />
+      <column caption='Distance To University' datatype='real' name='[distanceToUniversity]' role='measure' type='quantitative' />
+      <column caption='Fitness Center' datatype='string' name='[fitnessCenter]' role='dimension' type='nominal' />
+      <column caption='Flooring' datatype='string' name='[flooring]' role='dimension' type='nominal' />
+      <column caption='Furnished' datatype='string' name='[furnished]' role='dimension' type='nominal' />
+      <column caption='Internet Ready' datatype='string' name='[internetReady]' role='dimension' type='nominal' />
+      <column caption='Landlord Id' datatype='string' name='[landlordId]' role='dimension' type='nominal' />
+      <column caption='Laundry In Unit' datatype='string' name='[laundryInUnit]' role='dimension' type='nominal' />
+      <column caption='Lounge' datatype='string' name='[lounge]' role='dimension' type='nominal' />
+      <column caption='Microwave Oven' datatype='string' name='[microwaveOven]' role='dimension' type='nominal' />
+      <column caption='Package Service' datatype='string' name='[packageService]' role='dimension' type='nominal' />
+      <column caption='Patio' datatype='string' name='[patio]' role='dimension' type='nominal' />
+      <column caption='Pet Care' datatype='string' name='[petCare]' role='dimension' type='nominal' />
+      <column caption='Pet Friendly' datatype='string' name='[petFriendly]' role='dimension' type='nominal' />
+      <column datatype='string' name='[postalCode]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column caption='Property Mgr On Site' datatype='string' name='[propertyMgrOnSite]' role='dimension' type='nominal' />
+      <column caption='Shuttle' datatype='string' name='[shuttle]' role='dimension' type='nominal' />
+      <column caption='Smoke Free' datatype='string' name='[smokeFree]' role='dimension' type='nominal' />
+      <column caption='Storage Space' datatype='string' name='[storageSpace]' role='dimension' type='nominal' />
+      <column caption='Swimming Pool' datatype='string' name='[swimmingPool]' role='dimension' type='nominal' />
+      <column caption='Trash Service' datatype='string' name='[trashService]' role='dimension' type='nominal' />
+      <column caption='Utility Included' datatype='string' name='[utilityIncluded]' role='dimension' type='nominal' />
+      <column caption='Walk In Closet' datatype='string' name='[walkInCloset]' role='dimension' type='nominal' />
+      <column caption='Wifi At Community' datatype='string' name='[wifiAtCommunity]' role='dimension' type='nominal' />
+      <column-instance column='[aptName]' derivation='None' name='[none:aptName:nk]' pivot='key' type='nominal' />
+      <column-instance column='[shuttle]' derivation='None' name='[none:shuttle:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.417476' measure-ordering='alphabetic' measure-percentage='0.582524' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='shape' field='[none:shuttle:nk]' palette='KPI' type='shape'>
+            <map to='KPI/01.png'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+            <map to='KPI/03.png'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:aptName:nk]' palette='red_gold_10_0' type='palette'>
+            <map to='#b71d3e'>
+              <bucket>&quot;Wynfield Park&quot;</bucket>
+            </map>
+            <map to='#bd273f'>
+              <bucket>&quot;Westchester Tower Apartment&quot;</bucket>
+            </map>
+            <map to='#c43141'>
+              <bucket>&quot;Verde&quot;</bucket>
+            </map>
+            <map to='#ca3a42'>
+              <bucket>&quot;UniversityClub At College Park&quot;</bucket>
+            </map>
+            <map to='#d04344'>
+              <bucket>&quot;University View&quot;</bucket>
+            </map>
+            <map to='#d64c45'>
+              <bucket>&quot;University Gardens&quot;</bucket>
+            </map>
+            <map to='#dc5447'>
+              <bucket>&quot;The Varsity College Park&quot;</bucket>
+            </map>
+            <map to='#e15c48'>
+              <bucket>&quot;THE ENCLAVE AT 8700&quot;</bucket>
+            </map>
+            <map to='#e66549'>
+              <bucket>&quot;Terrapin Row&quot;</bucket>
+            </map>
+            <map to='#eb6e49'>
+              <bucket>&quot;Suburban Hill Apartments&quot;</bucket>
+            </map>
+            <map to='#f0774a'>
+              <bucket>&quot;Seven Springs Apartment&quot;</bucket>
+            </map>
+            <map to='#f47f4a'>
+              <bucket>&quot;Monument Village&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;Alloy by Alta&quot;</bucket>
+            </map>
+            <map to='#f5c75f'>
+              <bucket>&quot;Domain College Park&quot;</bucket>
+            </map>
+            <map to='#f6bc58'>
+              <bucket>&quot;Ferris Manor&quot;</bucket>
+            </map>
+            <map to='#f7894b'>
+              <bucket>&quot;Mazza Grandmarc&quot;</bucket>
+            </map>
+            <map to='#f7b254'>
+              <bucket>&quot;Graduate Hills&amp;Gardens&quot;</bucket>
+            </map>
+            <map to='#f9a750'>
+              <bucket>&quot;Landmark College Park&quot;</bucket>
+            </map>
+            <map to='#fa9d4f'>
+              <bucket>&quot;Lerner University Square&quot;</bucket>
+            </map>
+            <map to='#fb934d'>
+              <bucket>&quot;LYNC at Alterra&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Feature Selection'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Apartment Feature Selection</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='TerpHoogle.Apartment+ (BUDT758_DB_0502_09)' name='federated.0qmk8jj0v58ry719y2fd60zsk1h0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qmk8jj0v58ry719y2fd60zsk1h0'>
+            <column caption='Apartment Name' datatype='string' name='[aptName]' role='dimension' type='nominal' />
+            <column caption='Computer Lab' datatype='string' name='[computerLab]' role='dimension' type='nominal' />
+            <column caption='Controlled Access' datatype='string' name='[controlledAccess]' role='dimension' type='nominal' />
+            <column caption='Fitness Center' datatype='string' name='[fitnessCenter]' role='dimension' type='nominal' />
+            <column caption='Flooring' datatype='string' name='[flooring]' role='dimension' type='nominal' />
+            <column caption='Furnished' datatype='string' name='[furnished]' role='dimension' type='nominal' />
+            <column caption='Internet Ready' datatype='string' name='[internetReady]' role='dimension' type='nominal' />
+            <column caption='Laundry In Unit' datatype='string' name='[laundryInUnit]' role='dimension' type='nominal' />
+            <column caption='Lounge' datatype='string' name='[lounge]' role='dimension' type='nominal' />
+            <column-instance column='[aptName]' derivation='None' name='[none:aptName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[computerLab]' derivation='None' name='[none:computerLab:nk]' pivot='key' type='nominal' />
+            <column-instance column='[controlledAccess]' derivation='None' name='[none:controlledAccess:nk]' pivot='key' type='nominal' />
+            <column-instance column='[fitnessCenter]' derivation='None' name='[none:fitnessCenter:nk]' pivot='key' type='nominal' />
+            <column-instance column='[flooring]' derivation='None' name='[none:flooring:nk]' pivot='key' type='nominal' />
+            <column-instance column='[furnished]' derivation='None' name='[none:furnished:nk]' pivot='key' type='nominal' />
+            <column-instance column='[internetReady]' derivation='None' name='[none:internetReady:nk]' pivot='key' type='nominal' />
+            <column-instance column='[laundryInUnit]' derivation='None' name='[none:laundryInUnit:nk]' pivot='key' type='nominal' />
+            <column-instance column='[lounge]' derivation='None' name='[none:lounge:nk]' pivot='key' type='nominal' />
+            <column-instance column='[packageService]' derivation='None' name='[none:packageService:nk]' pivot='key' type='nominal' />
+            <column-instance column='[petFriendly]' derivation='None' name='[none:petFriendly:nk]' pivot='key' type='nominal' />
+            <column-instance column='[shuttle]' derivation='None' name='[none:shuttle:nk]' pivot='key' type='nominal' />
+            <column-instance column='[smokeFree]' derivation='None' name='[none:smokeFree:nk]' pivot='key' type='nominal' />
+            <column-instance column='[trashService]' derivation='None' name='[none:trashService:nk]' pivot='key' type='nominal' />
+            <column-instance column='[utilityIncluded]' derivation='None' name='[none:utilityIncluded:nk]' pivot='key' type='nominal' />
+            <column caption='Package Service' datatype='string' name='[packageService]' role='dimension' type='nominal' />
+            <column caption='Pet Friendly' datatype='string' name='[petFriendly]' role='dimension' type='nominal' />
+            <column caption='Shuttle' datatype='string' name='[shuttle]' role='dimension' type='nominal' />
+            <column caption='Smoke Free' datatype='string' name='[smokeFree]' role='dimension' type='nominal' />
+            <column caption='Trash Service' datatype='string' name='[trashService]' role='dimension' type='nominal' />
+            <column caption='Utility Included' datatype='string' name='[utilityIncluded]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:computerLab:nk]'>
+            <groupfilter function='level-members' level='[none:computerLab:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:controlledAccess:nk]'>
+            <groupfilter function='level-members' level='[none:controlledAccess:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:fitnessCenter:nk]'>
+            <groupfilter function='level-members' level='[none:fitnessCenter:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:flooring:nk]'>
+            <groupfilter function='level-members' level='[none:flooring:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:furnished:nk]'>
+            <groupfilter function='level-members' level='[none:furnished:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:internetReady:nk]'>
+            <groupfilter function='level-members' level='[none:internetReady:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:laundryInUnit:nk]'>
+            <groupfilter function='level-members' level='[none:laundryInUnit:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:lounge:nk]'>
+            <groupfilter function='level-members' level='[none:lounge:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:packageService:nk]'>
+            <groupfilter function='level-members' level='[none:packageService:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:petFriendly:nk]'>
+            <groupfilter function='level-members' level='[none:petFriendly:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:shuttle:nk]'>
+            <groupfilter function='level-members' level='[none:shuttle:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:smokeFree:nk]'>
+            <groupfilter function='level-members' level='[none:smokeFree:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:trashService:nk]'>
+            <groupfilter function='level-members' level='[none:trashService:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:utilityIncluded:nk]'>
+            <groupfilter function='level-members' level='[none:utilityIncluded:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:shuttle:nk]</column>
+            <column>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:computerLab:nk]</column>
+            <column>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:controlledAccess:nk]</column>
+            <column>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:fitnessCenter:nk]</column>
+            <column>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:lounge:nk]</column>
+            <column>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:packageService:nk]</column>
+            <column>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:petFriendly:nk]</column>
+            <column>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:trashService:nk]</column>
+            <column>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:smokeFree:nk]</column>
+            <column>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:furnished:nk]</column>
+            <column>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:laundryInUnit:nk]</column>
+            <column>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:utilityIncluded:nk]</column>
+            <column>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:flooring:nk]</column>
+            <column>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:internetReady:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='260' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:controlledAccess:nk]' value='116' />
+            <format attr='width' field='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:fitnessCenter:nk]' value='100' />
+            <format attr='width' field='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:shuttle:nk]' value='56' />
+            <format attr='width' field='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:packageService:nk]' value='100' />
+            <format attr='width' field='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:aptName:nk]' value='184' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:aptName:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='shape' value='circle' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:aptName:nk]</rows>
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Feature Selection Dashboard'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='TerpHoogle.Apartment+ (BUDT758_DB_0502_09)' name='federated.0qmk8jj0v58ry719y2fd60zsk1h0' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0qmk8jj0v58ry719y2fd60zsk1h0'>
+        <column caption='Computer Lab' datatype='string' name='[computerLab]' role='dimension' type='nominal' />
+        <column caption='Controlled Access' datatype='string' name='[controlledAccess]' role='dimension' type='nominal' />
+        <column caption='Fitness Center' datatype='string' name='[fitnessCenter]' role='dimension' type='nominal' />
+        <column caption='Flooring' datatype='string' name='[flooring]' role='dimension' type='nominal' />
+        <column caption='Furnished' datatype='string' name='[furnished]' role='dimension' type='nominal' />
+        <column caption='Internet Ready' datatype='string' name='[internetReady]' role='dimension' type='nominal' />
+        <column caption='Laundry In Unit' datatype='string' name='[laundryInUnit]' role='dimension' type='nominal' />
+        <column caption='Lounge' datatype='string' name='[lounge]' role='dimension' type='nominal' />
+        <column-instance column='[computerLab]' derivation='None' name='[none:computerLab:nk]' pivot='key' type='nominal' />
+        <column-instance column='[controlledAccess]' derivation='None' name='[none:controlledAccess:nk]' pivot='key' type='nominal' />
+        <column-instance column='[fitnessCenter]' derivation='None' name='[none:fitnessCenter:nk]' pivot='key' type='nominal' />
+        <column-instance column='[flooring]' derivation='None' name='[none:flooring:nk]' pivot='key' type='nominal' />
+        <column-instance column='[furnished]' derivation='None' name='[none:furnished:nk]' pivot='key' type='nominal' />
+        <column-instance column='[internetReady]' derivation='None' name='[none:internetReady:nk]' pivot='key' type='nominal' />
+        <column-instance column='[laundryInUnit]' derivation='None' name='[none:laundryInUnit:nk]' pivot='key' type='nominal' />
+        <column-instance column='[lounge]' derivation='None' name='[none:lounge:nk]' pivot='key' type='nominal' />
+        <column-instance column='[packageService]' derivation='None' name='[none:packageService:nk]' pivot='key' type='nominal' />
+        <column-instance column='[petFriendly]' derivation='None' name='[none:petFriendly:nk]' pivot='key' type='nominal' />
+        <column-instance column='[shuttle]' derivation='None' name='[none:shuttle:nk]' pivot='key' type='nominal' />
+        <column-instance column='[smokeFree]' derivation='None' name='[none:smokeFree:nk]' pivot='key' type='nominal' />
+        <column-instance column='[trashService]' derivation='None' name='[none:trashService:nk]' pivot='key' type='nominal' />
+        <column-instance column='[utilityIncluded]' derivation='None' name='[none:utilityIncluded:nk]' pivot='key' type='nominal' />
+        <column caption='Package Service' datatype='string' name='[packageService]' role='dimension' type='nominal' />
+        <column caption='Pet Friendly' datatype='string' name='[petFriendly]' role='dimension' type='nominal' />
+        <column caption='Shuttle' datatype='string' name='[shuttle]' role='dimension' type='nominal' />
+        <column caption='Smoke Free' datatype='string' name='[smokeFree]' role='dimension' type='nominal' />
+        <column caption='Trash Service' datatype='string' name='[trashService]' role='dimension' type='nominal' />
+        <column caption='Utility Included' datatype='string' name='[utilityIncluded]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='5' param='horz' type='layout-flow' w='78900' x='800' y='1000'>
+            <zone h='98000' id='3' type='layout-basic' w='61400' x='800' y='1000'>
+              <zone h='98000' id='1' name='Feature Selection' w='61400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='175' h='98000' id='4' is-fixed='true' param='vert' type='layout-flow' w='17500' x='62200' y='1000'>
+              <zone fixed-size='78' h='10750' id='6' is-fixed='true' name='Feature Selection' param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:shuttle:nk]' type='filter' w='17500' x='62200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='13500' id='9' name='Feature Selection' param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:fitnessCenter:nk]' type='filter' w='17500' x='62200' y='11750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='13500' id='13' name='Feature Selection' param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:trashService:nk]' type='filter' w='17500' x='62200' y='25250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11125' id='16' name='Feature Selection' param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:laundryInUnit:nk]' type='filter' w='17500' x='62200' y='38750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='13500' id='17' name='Feature Selection' param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:utilityIncluded:nk]' type='filter' w='17500' x='62200' y='49875'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='20625' id='18' name='Feature Selection' param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:flooring:nk]' type='filter' w='17500' x='62200' y='63375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='107' h='14375' id='19' is-fixed='true' name='Feature Selection' param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:internetReady:nk]' type='filter' w='17500' x='62200' y='84000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='11250' id='8' name='Feature Selection' param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:controlledAccess:nk]' type='filter' w='19500' x='79700' y='15250'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='14250' id='7' name='Feature Selection' param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:computerLab:nk]' type='filter' w='19500' x='79700' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='15500' id='10' name='Feature Selection' param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:lounge:nk]' type='filter' w='19500' x='79700' y='26500'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='13750' id='11' name='Feature Selection' param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:packageService:nk]' type='filter' w='19500' x='79700' y='42000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='11875' id='12' name='Feature Selection' param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:petFriendly:nk]' type='filter' w='19500' x='79700' y='55750'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='13375' id='14' name='Feature Selection' param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:smokeFree:nk]' type='filter' w='19500' x='79700' y='67625'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='18000' id='15' name='Feature Selection' param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:furnished:nk]' type='filter' w='19500' x='79700' y='81000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Feature Selection'>
+      <cards>
+        <edge name='left'>
+          <strip size='138'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='121'>
+            <card param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:shuttle:nk]' type='filter' />
+            <card param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:computerLab:nk]' type='filter' />
+            <card param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:controlledAccess:nk]' type='filter' />
+            <card param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:fitnessCenter:nk]' type='filter' />
+          </strip>
+          <strip size='112'>
+            <card param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:lounge:nk]' type='filter' />
+            <card param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:packageService:nk]' type='filter' />
+            <card param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:petFriendly:nk]' type='filter' />
+            <card param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:trashService:nk]' type='filter' />
+          </strip>
+          <strip size='104'>
+            <card param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:smokeFree:nk]' type='filter' />
+            <card param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:furnished:nk]' type='filter' />
+            <card param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:laundryInUnit:nk]' type='filter' />
+            <card param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:utilityIncluded:nk]' type='filter' />
+          </strip>
+          <strip size='106'>
+            <card param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:flooring:nk]' type='filter' />
+            <card param='[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:internetReady:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:Lounge:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:airConditioning:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:bbqArea:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:breakfastBar:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:businessCenter:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:cableTV:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:carWashArea:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:ceilingFan:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:clubHouse:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:coffeeBar:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:computerLab:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:controlledAccess:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:fitnessCenter:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:flooring:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:furnished:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:internetReady:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:laundryInUnit:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:lounge:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:packageService:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:petFriendly:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:shuttle:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:smokeFree:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:swimmingPool:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:trashService:nk]</field>
+            <field>[federated.0qmk8jj0v58ry719y2fd60zsk1h0].[none:utilityIncluded:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='dashboard' maximized='true' name='Feature Selection Dashboard'>
+      <viewpoints>
+        <viewpoint name='Feature Selection' />
+      </viewpoints>
+      <active id='-1' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Feature Selection' width='192'>
+      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
+      is8AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Feature Selection Dashboard' width='192'>
+      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
+      QmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
